@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+
+{% block title %}NLPearl - AI Powered Course Recommendations{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <div class="hero-background">
+        <div class="hero-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+    </div>
+    <div class="hero-content">
+        <div class="hero-text">
+            <h1 class="hero-title">
+                NLPearl – AI Powered Course Recommendation Intelligence
+            </h1>
+            <p class="hero-subtitle">
+                Discover the most relevant Coursera courses tailored to your learning goals using advanced NLP and machine learning intelligence.
+            </p>
+            <a href="{{ url_for('ask_course') }}" class="cta-button">
+                <i class="fas fa-rocket"></i>
+                Get Recommendations
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="features">
+    <div class="container">
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <h3>AI-Powered Matching</h3>
+                <p>Advanced NLP algorithms analyze your learning goals to find the most relevant courses from thousands of options.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-target"></i>
+                </div>
+                <h3>Personalized Results</h3>
+                <p>Get tailored recommendations based on your specific interests, skill level, and career objectives.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h3>Proven Reliability</h3>
+                <p>Built on machine learning models trained on comprehensive course data for accurate and trustworthy suggestions.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="how-it-works">
+    <div class="container">
+        <h2 class="section-title">How It Works</h2>
+        <div class="steps">
+            <div class="step">
+                <div class="step-number">1</div>
+                <h4>Enter Your Goal</h4>
+                <p>Describe what you want to learn in natural language</p>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <h4>AI Analysis</h4>
+                <p>Our NLP engine processes and understands your requirements</p>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <h4>Get Recommendations</h4>
+                <p>Receive curated course suggestions tailored to your needs</p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
